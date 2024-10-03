@@ -1,5 +1,5 @@
 
-import Filme from "../models/animal-model.js";
+import Filme from "../models/filme-model"
 
 export const locadora = async (req, res) => {
   try {

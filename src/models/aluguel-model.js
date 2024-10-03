@@ -1,14 +1,22 @@
 import db from "../config/db.js";
 
 const aluguelSchema = new db.Schema({
-
-      Entidade: Rented
-        {
-        rented_by: ObjectId,
-        filme_rented: ObjectId ,
-        rent_date: Date,
-        return_date: Date
-       },
+      rented_by: {
+            type: ObjectId,
+            required: true,
+          },
+      movie_rented: {
+            type: ObjectId,
+            required: true,
+          },
+          rent_date: {
+            type: date,
+            required: true,
+          },
+            return_date: {
+            type: date,
+            required: true,
+          },
  });
 
 const Aluguel = db.model("Aluguel", aluguelSchema);

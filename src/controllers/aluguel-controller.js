@@ -1,4 +1,3 @@
-
 import Aluguel from "../models/aluguel-model.js";
 
 export const locadora = async (req, res) => {
